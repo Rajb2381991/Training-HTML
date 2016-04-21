@@ -10,26 +10,29 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,button
 }
 .header
 {
-	padding:36px 0;
+	padding-top:36px;
+	margin-bottom: 36px;
 }
-.header a
+.header .logo
 {
-	display: inline-block;
-	height:45px;
-	width:198px;
+	display: block;
+	background-image: url(../images/logo.png);
+	width: 200px;
+	height: 45px;
 }
 .header img
 {
 	width:100%;
 	height: 100%;
 }
-.menu ul
+.menu
 {
 	list-style-type: none;
 	border-bottom: 2px solid #ededed;
+	margin-bottom: 30px;
 }
 
-.menu ul li
+.menu li
 {
 	display: inline-block;
 	margin-right: 35px;
@@ -51,11 +54,11 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,button
 .banner 
 {
 	position: relative;
-	margin-top: 30px;
 	height: 600px;
 	background-image: url(../images/banner.jpg);
+	margin-bottom: 35px;
 }
-.banner .bannerContent
+.banner h1
 {
 	position: absolute;
 	padding: 60px 30px;
@@ -64,22 +67,25 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,button
 	width: 570px;
 	background-color:#07a1c8;
 	opacity: 0.8;
-}
-.banner .bannerContent h1
-{
 	color: #fff;
 	font-size: 30px;
-	line-height: 1.2;
-	font-family:"OpenSans-Light";
+	line-height: 36px;
 }
 .whatWeDo
 {
-	margin:50px 15px 100px 15px;
+	margin:0 15px 60px 15px;
 }
 .whatWeDo .whatWeDoPicture
 {
 	float: left;
 	margin-right: 30px;
+	width:270px;
+	height: 165px;
+}
+.whatWeDoPicture img
+{
+	width:100%;
+	height: 100%;
 }
 .whatWeDo .whatWeDoContent
 {
@@ -94,14 +100,15 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,button
 }
 .whatWeDo h3
 {
-	margin-bottom: 50px;
+	margin-bottom: 35px;
 	color: #447799;
 	font-size: 32px;
 }
 .ourNetwork
 {
-	border-bottom:2px solid #ededed;
-	padding-bottom: 100px;
+	padding-bottom:60px;
+	border-bottom:1px solid #ededed;
+	margin-bottom: 80px;
 }
 .ourNetwork h3
 {
@@ -109,7 +116,6 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,button
 	font-size: 32px;
 	margin:0 15px 30px 15px;
 }
-
 .ourNetworkPicture
 {
 	width: 1200px;
@@ -124,25 +130,27 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,button
 .sectors
 {
 	float: left;
+	width:570px;
+}
+.sectors h2
+{
+	margin-bottom:30px;
 }
 .annouce
 {
 	float: left;
 	width:570px;
-}
-.sectors h2
-{
-	margin-left: 10px;
+	margin-left:30px;
 }
 .annouce h2
 {
-	margin-left: 40px;
+	margin-bottom: 30px;
 }
 .sectorsAndAnnounce
 {
-	padding-top: 40px;
 	padding-bottom: 100px;
 	border-bottom:1px solid #ededed;
+	margin:0 15px 20px;
 }
 .sectorsAndAnnounce h2
 {
@@ -152,6 +160,8 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,button
 .sectorsContent
 {
 	list-style-type: none;
+	margin-left:-30px;
+	display: inline-block;
 }
 .sectorsContent li h3
 {
@@ -160,57 +170,50 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,button
 .sectorsContent .sectorList
 {
 	float: left;
-	margin: 20px 10px;
-}
-.sectorsContent a
-{
-	display: inline-block;
-	text-decoration: none;
-	color:#1e2d9b;
-	font-size: 14px;
+	margin-left: 30px;
+	margin-bottom: 30px;
 }
 .sectorsContent .sectorsDownload
 {
-	margin-top: 20px;
 	background-color: #FFF;
 	border: 2px solid #302b95;
 	border-radius: 3px;
 	padding:10px 15px;
+	text-decoration: none;
+	display: inline-block;
+	color:#1e2d9b;
+	font-size: 14px;
 }
 .sectorsPicture
 {
 	width:270px;
 	height: 205px;
+	margin-bottom: 20px;
 }
 .sectorsPicture img
 {
 	width:100%;
 	height: 100%;
 }
-.annouceContent
+.annouceContent li
 {
-	margin:30px 30px 0 30px;
-}
-.annouceContent .listAnnounce
-{
-	padding:0 15px;
 	margin-bottom: 25px;
 	list-style-type: none;
 }
-.annouceContent .listAnnounce h3
+.annouceContent li h3
 {
 	margin-bottom: 15px;
 	color:#222222;
 	font-size: 18px;
 }
-.annouceContent .listAnnounce p
+.annouceContent li p
 {
 	margin-bottom: 10px;
 	color:#444444;
 	font-size: 16px;	
 }
 
-.annouceContent .listAnnounce span
+.annouceContent li span
 {
 	margin-bottom: 10px;
 	color:#444444;
@@ -223,10 +226,10 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,button
 }
 .footerSection
 {
-	margin-top:20px;
 	background-color: #000;
+	margin-bottom:10px;
 }
-.footerSection .navList
+.footerSection li
 {
 	padding-right:10px;
 	padding-left: 10px;
@@ -259,6 +262,11 @@ body,ul,li,p,h1,h2,h3,h4,h5,h6,button
 .footerSection .footerLeft li:first-child,.footerSection .footerRight li:first-child
 {
 	border:none;
+}
+.footerLeft .clear,.footerRight .clear
+{
+	padding:0;
+	margin: 0;
 }
 .sectorsContent .clear,.clear
 {
